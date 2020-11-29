@@ -1,0 +1,8 @@
+.TableRow--text {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.TableRow--image {
+    padding-top: 1rem;
+}
