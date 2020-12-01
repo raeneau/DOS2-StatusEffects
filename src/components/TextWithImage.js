@@ -1,5 +1,20 @@
-import {acidIcon } from '../assets/icons';
-const TextWithImage = () => 
-    (<div><img src={ acidIcon } alt="Acid"/> </div>);
+import React from "react";
+import PropTypes from "prop-types";
+
+// -----------------------------------------------------------------------------
+
+const TextWithImage = ({ name, url }) => (
+  <div>
+    <img src={url} alt="Acid" />
+    <span>{name}</span>
+  </div>
+);
+
+// -----------------------------------------------------------------------------
+
+TextWithImage.propTypes = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
 
 export default TextWithImage;
