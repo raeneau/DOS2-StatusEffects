@@ -1,8 +1,58 @@
 .TableRow--text {
-    font-weight: 600;
-    margin-top: 0;
+  font-weight: 600;
+  margin-top: 0;
 }
 
 .TableRow--image {
-    padding-top: 1rem;
+  padding-top: 1rem;
+}
+
+.TableRow .SkillCategory {
+  border: 1.75px dotted #000;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.TableRow .aerotheurge {
+  border-color: rgb(95, 92, 196);
+}
+
+.TableRow .geomancer {
+  border-color: rgb(137, 78, 35);
+}
+
+.TableRow .huntsman {
+  border-color: rgb(107, 207, 35);
+}
+
+.TableRow .hydrosophist {
+  border-color: rgb(81, 153, 218);
+}
+
+.TableRow .necromancer {
+  border-color: rgb(188, 72, 167);
+}
+
+.TableRow .pyromancer {
+  border-color: rgb(222, 117, 48);
+}
+
+.TableRow .polymorph {
+  border-color: rgb(249, 195, 70);
+}
+
+.TableRow .scoundrel {
+  border-color: rgb(102, 159, 157);
+}
+
+.TableRow .summoning {
+  border-color: rgb(126, 72, 178);
+}
+
+.TableRow .warfare {
+  border-color: rgb(168, 40, 44);
+}
+
+.TableRow .special {
+  border-color: rgb(255, 255, 255);
 }

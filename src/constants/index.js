@@ -44,6 +44,7 @@ export const SKILLS = {
   },
   BLESS: {
     name: "Bless",
+    category: SKILLS_CATEGORIES.SPECIAL,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bless-icon.png",
   },

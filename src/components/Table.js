@@ -95,11 +95,11 @@ const Table = () => (
         effect=""
         resist={PHYSICAL}
         cures={[
-          CLEANSE_WOUNDS,
+          RESTORATION,
           MASS_CLEANSE_WOUNDS,
+          CLEANSE_WOUNDS,
           FIRST_AID,
           FORTIFY,
-          RESTORATION,
         ]}
       />
       <TableRow
@@ -115,11 +115,11 @@ const Table = () => (
         effect=""
         resist={MAGIC}
         cures={[
-          ARMOUR_OF_FROST,
-          CLEANSE_WOUNDS,
           MASS_CLEANSE_WOUNDS,
           CRYOTHERAPY,
           CRYOGENIC_STASIS,
+          CLEANSE_WOUNDS,
+          ARMOUR_OF_FROST,
           ARCANE_STITCH,
           FIRST_AID,
           FORTIFY,
@@ -159,7 +159,7 @@ const Table = () => (
         statusName="Decaying"
         effect=""
         resist={PHYSICAL}
-        cures={[FORTIFY, CLEANSE_WOUNDS, MASS_CLEANSE_WOUNDS]}
+        cures={[FORTIFY, MASS_CLEANSE_WOUNDS, CLEANSE_WOUNDS]}
       />
       <TableRow
         icon={diseased}
@@ -170,8 +170,8 @@ const Table = () => (
           FORTIFY,
           BLESS,
           FIRST_AID,
-          CLEANSE_WOUNDS,
           MASS_CLEANSE_WOUNDS,
+          CLEANSE_WOUNDS,
           BREAK_THE_SHACKLES,
         ]}
       />
@@ -196,10 +196,10 @@ const Table = () => (
         resist={MAGIC}
         cures={[
           BLESS,
-          ARCANE_STITCH,
+          MASS_CRYOTHERAPY,
           MASS_CLEANSE_WOUNDS,
           CRYOTHERAPY,
-          MASS_CRYOTHERAPY,
+          ARCANE_STITCH,
         ]}
       />
       <TableRow
@@ -218,9 +218,9 @@ const Table = () => (
           FIRST_AID,
           FORTIFY,
           RESTORATION,
+          MASS_CLEANSE_WOUNDS,
           CLEANSE_WOUNDS,
           ARCANE_STITCH,
-          MASS_CLEANSE_WOUNDS,
         ]}
       />
       <TableRow
@@ -278,9 +278,9 @@ const Table = () => (
         cures={[
           FIRST_AID,
           BREATHING_BUBBLE,
-          ARCANE_STITCH,
           MASS_BREATHING_BUBBLES,
           MASS_CLEANSE_WOUNDS,
+          ARCANE_STITCH,
           BREAK_THE_SHACKLES,
         ]}
       />
