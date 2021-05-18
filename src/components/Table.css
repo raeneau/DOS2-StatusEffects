@@ -1,12 +1,16 @@
 .StatusEffectsTable {
-    border: 2px solid #eb8203;
-    width: 100%;
+  border: 2px solid #eb8203;
+  width: 100%;
 }
 
 .StatusEffectsTable tr {
-    background-color: rgb(7, 7, 7);
+  background-color: rgb(7, 7, 7);
 }
 
 .StatusEffectsTable tr:nth-child(odd) {
-    background-color: #222222;
+  background-color: #222222;
+}
+
+.StatusEffectsTable .Icon {
+  max-width: 64px;
 }

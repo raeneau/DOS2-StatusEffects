@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const TextWithImage = ({ name, url }) => (
   <div>
-    <img src={url} alt="Acid" />
+    <img src={url} alt={name} className="Icon" />
     <span>{name}</span>
   </div>
 );

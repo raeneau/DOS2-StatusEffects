@@ -1,7 +1,5 @@
 import React from "react";
-import { ARMOR_TYPE } from "../constants";
-
-import { physicalArmor, magicArmor } from "../assets/skills";
+import PropTypes from "prop-types";
 
 // -----------------------------------------------------------------------------
 
@@ -10,36 +8,25 @@ const cn = {
   header: `${cnBase}--Header`,
 };
 
-const TableHeader = ({ type }) => {
-  switch (type) {
-    case ARMOR_TYPE.MAGIC: {
-      return (
-        <div>
-          <img src={magicArmor} alt="Magic Armor" className={cn.image} />
-          <h4 className={cn.text}>Magic Armor</h4>
-        </div>
-      );
-    }
-
-    case ARMOR_TYPE.PHYSICAL: {
-      return (
-        <div>
-          <img src={physicalArmor} alt="Physical Armor" className={cn.image} />
-          <h4 className={cn.text}>Physical Armor</h4>
-        </div>
-      );
-    }
-
-    default: {
-      return (
-        <div>
-          <h4 className={cn.text}>N/A</h4>
-        </div>
-      );
-    }
-  }
+const ResistCell = ({ resist }) => {
+  const { name = "N/A", url } = resist;
+  return (
+    <div>
+      {url && <img src={url} alt={name} className={cn.image} />}
+      <h4 className={cn.text}>{name}</h4>
+    </div>
+  );
 };
 
 // -----------------------------------------------------------------------------
 
-export default TableHeader;
+ResistCell.propTypes = {
+  resist: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    url: PropTypes.string,
+  }).isRequired,
+};
+
+// -----------------------------------------------------------------------------
+
+export default ResistCell;

@@ -1,143 +1,175 @@
-// eslint-disable-next-line
-export const ARMOR_TYPE = {
-  MAGIC: "MAGIC",
-  PHYSICAL: "PHYSICAL",
-  NONE: "NONE",
+export const SKILLS_CATEGORIES = {
+  AERO: "AEROTHEURGE",
+  GEO: "GEOMANCER",
+  HUNTSMAN: "HUNTSMAN",
+  HYDRO: "HYDROSOPHIST",
+  NECRO: "NECROMANCER",
+  POLY: "POLYMORPH",
+  PYRO: "PYROMANCER",
+  SCOUNDREL: "SCOUNDREL",
+  SUMMONING: "SUMMONING",
+  WARFARE: "WARFARE",
+  SPECIAL: "SPECIAL",
 };
 
-export const SKILLS_NAMES = {
+export const RESISTANCE = {
   // Armor Resist
-  PHYSICAL_ARMOR: "PHYSICAL_ARMOR",
-  MAGIC_ARMOR: "MAGIC_ARMOR",
-
-  // Skills
-  ARCANE_STITCH: "ARCANE_STITCH",
-  ARMOUR_OF_FROST: "ARMOUR_OF_FROST",
-  BLESS: "BLESS",
-  BREAK_THE_SHACKLES: "BREAK_THE_SHACKLES",
-  CLEANSE_WOUNDS: "CLEANSE_WOUNDS",
-  CRYOGENIC_STASIS: "CRYOGENIC_STASIS",
-  CRYOTHERAPY: "CRYOTHERAPY",
-  ENRAGE: "ENRAGE",
-  FIRST_AID: "FIRST_AID",
-  FORTIFY: "FORTIFY",
-  HASTE: "HASTE",
-  MASS_CLEANSE_WOUNDS: "MASS_CLEANSE_WOUNDS",
-  OILY_CARAPACE: "OILY_CARAPACE",
-  PEACE_OF_MIND: "PEACE_OF_MIND",
-  RESTED: "RESTED",
-  RESTORATION: "RESTORATION",
-  TORNADO: "TORNADO",
-  TURN_TO_OIL: "TURN_TO_OIL",
-  VAPORIZE: "VAPORIZE",
-};
-
-export const SKILLS = {
-  // Armor Resist
-  [SKILLS_NAMES.PHYSICAL_ARMOR]: {
+  PHYSICAL: {
     name: "Physical Armor",
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/physical_armour-icon.png",
   },
-  [SKILLS_NAMES.MAGIC_ARMOR]: {
+  MAGIC: {
     name: "Magic Armor",
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/magic_armour-icon.png",
   },
+  NONE: {
+    name: "N/A",
+  },
+};
 
-  // Skills
-  [SKILLS_NAMES.ARCANE_STITCH]: {
+export const SKILLS = {
+  ARCANE_STITCH: {
     name: "Arcane Stitch",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist-14-16.png",
   },
-  [SKILLS_NAMES.ARMOUR_OF_FROST]: {
+  ARMOUR_OF_FROST: {
     name: "Armor of Frost",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist_armour_of_frost.png",
   },
-  [SKILLS_NAMES.BLESS]: {
+  BLESS: {
     name: "Bless",
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/bless-icon.png",
   },
-  [SKILLS_NAMES.BREAK_THE_SHACKLES]: {
+  BREAK_THE_SHACKLES: {
     name: "Break the Shackles",
+    category: SKILLS_CATEGORIES.SPECIAL,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/break_the_shackles-icon.png",
   },
-  [SKILLS_NAMES.CLEANSE_WOUNDS]: {
+  BREATHING_BUBBLE: {
+    name: "Breathing Bubble",
+    category: SKILLS_CATEGORIES.AERO,
+    url:
+      "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/aerotheurge-16-13.png",
+  },
+  CLEANSE_WOUNDS: {
     name: "Cleanse Wounds",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist-16-24.png",
   },
-  [SKILLS_NAMES.CRYOGENIC_STASIS]: {
+  CRYOGENIC_STASIS: {
     name: "Cryogenic Stasis",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist_cryogenic_statis-icon.png",
   },
-  [SKILLS_NAMES.CRYOTHERAPY]: {
+  CRYOTHERAPY: {
     name: "Cryotherapy",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist-16-18.png",
   },
-  [SKILLS_NAMES.ENRAGE]: {
+  ENRAGE: {
     name: "Enrage",
+    category: SKILLS_CATEGORIES.WARFARE,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/warfare_enrage-icon.png",
   },
-  [SKILLS_NAMES.FIRST_AID]: {
+  FIRST_AID: {
     name: "First Aid",
+    category: SKILLS_CATEGORIES.HUNTSMAN,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huntsman_first_aid-icon.png",
   },
-  [SKILLS_NAMES.FORTIFY]: {
+  FORTIFY: {
     name: "Fortify",
+    category: SKILLS_CATEGORIES.GEO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/fortify-icon.png",
   },
-  [SKILLS_NAMES.HASTE]: {
+  HASTE: {
     name: "Haste",
+    category: SKILLS_CATEGORIES.PYRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pyrokinetic_haste-icon.png",
   },
-  [SKILLS_NAMES.MASS_CLEANSE_WOUNDS]: {
+  MASS_BREATHING_BUBBLES: {
+    name: "Mass Breathing Bubbles",
+    category: SKILLS_CATEGORIES.AERO,
+    url:
+      "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/aerotheurge-16-14.png",
+  },
+  MASS_CLEANSE_WOUNDS: {
     name: "Mass Cleanse Wounds",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist-16-23.png",
   },
-  [SKILLS_NAMES.OILY_CARAPACE]: {
+  MASS_CRYOTHERAPY: {
+    name: "Mass Cryotherapy",
+    category: SKILLS_CATEGORIES.HYDRO,
+    url:
+      "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist-16-17.png",
+  },
+  OILY_CARAPACE: {
     name: "Oily Carapace",
+    category: SKILLS_CATEGORIES.GEO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/geomancer-17-13.png",
   },
-  [SKILLS_NAMES.PEACE_OF_MIND]: {
+  PEACE_OF_MIND: {
     name: "Peace of Mind",
+    category: SKILLS_CATEGORIES.PYRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/pyrokinetic_burn_my_eyes-icon.png",
   },
-  [SKILLS_NAMES.RESTED]: {
+  RESTED: {
     name: "Rested",
+    category: SKILLS_CATEGORIES.SPECIAL,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/rested.png",
   },
-  [SKILLS_NAMES.RESTORATION]: {
+  RESTORATION: {
     name: "Restoration",
+    category: SKILLS_CATEGORIES.HYDRO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/hydrosophist_restoration-icon.png",
   },
-  [SKILLS_NAMES.TORNADO]: {
+  SOUL_MATE: {
+    name: "Soul Mate",
+    category: SKILLS_CATEGORIES.SUMMONING,
+    url:
+      "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/summoning-14-21.png",
+  },
+  TACTICAL_RETREAT: {
+    name: "Tactical Retreat",
+    category: SKILLS_CATEGORIES.HUNTSMAN,
+    url:
+      "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/huntsman_tactical_retreat-icon.png",
+  },
+  TORNADO: {
     name: "Tornado",
+    category: SKILLS_CATEGORIES.AERO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin/Skill_Air_Tornado.jpg",
   },
-  [SKILLS_NAMES.TURN_TO_OIL]: {
+  TURN_TO_OIL: {
     name: "Turn to Oil",
+    category: SKILLS_CATEGORIES.GEO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/geomancer_oil_spring-icon.png",
   },
-  [SKILLS_NAMES.VAPORIZE]: {
+  VAPORIZE: {
     name: "Vaporize",
+    category: SKILLS_CATEGORIES.AERO,
     url:
       "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/aerotheurge_vaporise-icon.png",
   },

@@ -36,10 +36,6 @@ export const frozen =
 export const knockedDown =
   "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_knocked_down-icon.png";
 
-// M
-export const muted =
-  "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_muted-icon.png";
-
 // N
 export const necrofire =
   "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_necro_fire-icon.png";
@@ -55,6 +51,8 @@ export const shocked =
   "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/shocked.png";
 export const shacklesOfPain =
   "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_shackles_of_pain-icon.png";
+export const silenced =
+  "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_muted-icon.png";
 export const sleeping =
   "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_sleeping-icon.png";
 export const slowed =
@@ -67,9 +65,3 @@ export const suffocating =
 // T
 export const terrified =
   "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_frightened-icon.png";
-
-// W
-export const warm =
-  "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_warm-icon.png";
-export const wet =
-  "https://divinityoriginalsin2.wiki.fextralife.com/file/Divinity-Original-Sin-2/status_effect_wet-icon.png";
