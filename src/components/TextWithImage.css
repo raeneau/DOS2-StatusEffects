@@ -1,0 +1,10 @@
+.SkillCell {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10%;
+  padding: 0.75rem;
+}
+
+.SkillName {
+  align-self: center;
+}

@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// CSS.
+import "./TextWithImage.css";
+
 // -----------------------------------------------------------------------------
 
 const TextWithImage = ({ name, url }) => (
-  <div>
-    <img src={url} alt={name} className="Icon" />
-    <span>{name}</span>
+  <div className="SkillCell">
+    <img src={url} alt={`${name}-Icon`} className="Icon SkillIcon" />
+    <span className="SkillName">{name}</span>
   </div>
 );
 
